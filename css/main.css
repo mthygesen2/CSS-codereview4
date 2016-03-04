@@ -55,25 +55,25 @@ table {
 
 .main > * button {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: none;
   border-radius: 50%;
   transition: all .5s;
   align-self: center;
   margin: 0 auto; }
   .main > * button i {
-    font-size: 4em;
+    font-size: 3em;
     margin: auto;
     color: rgba(255, 255, 255, 0.8); }
   .main > * button:hover {
     transform: scale(1.5); }
 
 .submit {
-  border: 1px solid orange;
+  border: 1px solid #dc7725;
   height: 50px;
   width: 150px;
-  background-color: orange;
+  background-color: #dc7725;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
