@@ -1,10 +1,12 @@
 .main {
   height: 100%;
-  display: flex;
   @include flex-container($flex-flow: column nowrap);
+  @media screen and (min-width: 768px) {
+    @include flex-container($flex-flow: row wrap);
+    }
   & > * {
     @extend %font-caption;
-    @include flex-container(90%, 250px, $flex-flow: column nowrap, $align: flex-end, $justify: flex-end);
+    @include flex-container(90%, 350px, $flex-flow: column nowrap, $align: flex-end, $justify: flex-end);
     margin: 1em auto;
     border-radius: 4px;
     h3 {
@@ -19,26 +21,43 @@
       margin: 0 0 0.5em 2em;
       align-self: baseline;
     }
+    @media screen and (min-width: 768px) {
+      width: 50%;
+      margin: 0;
+      display: flex;
+      flex-flow: column wrap;
+      border-radius: none;
+      }
+    }
   }
 
+
+//Main Section Backgrounds//// /////////////////////////
+.main {
   @include e("top") {
     @include bg-img("http://arcticwild.com/wp-content/uploads/2014/11/Canning-River-Raft_12.jpg");
+    @extend %media-medium-big;
   }
   @include e("half") {
     @include m("1") {
       @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-basecamp.jpg");
+      @extend %media-medium-small;
     }
     @include m("2") {
       @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-backpacking.jpg");
+      @extend %media-medium-small;
     }
     @include m("3") {
       @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-canoe.jpg");
+      @extend %media-medium-small;
     }
     @include m("4") {
       @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-photo.jpg");
+      @extend %media-medium-small;
     }
   }
   @include e("bottom") {
     @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg");
+    @extend %media-medium-big;
   }
 }
