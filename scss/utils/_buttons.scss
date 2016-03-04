@@ -7,6 +7,17 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
+  margin: auto auto 100px auto;
+  .caret {
+    position: absolute;
+    width: 0;
+  	height: 0;
+  	border-left: 20px solid transparent;
+  	border-right: 20px solid transparent;
+  	border-top: 15px solid $brand-color;
+    top: 45px;
+    right: 50px;
+  }
 }
 
 .main > * {

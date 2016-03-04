@@ -55,6 +55,8 @@ Header Layout
 ///header middle captions and hr ///////
 /////////////
 .header {
+  // display: flex;
+  // flex-flow: column;
   @include e("caption") {
     margin: auto;
     h3{

@@ -85,7 +85,17 @@ table {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  position: relative; }
+  position: relative;
+  margin: auto auto 100px auto; }
+  .submit .caret {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #dc7725;
+    top: 45px;
+    right: 50px; }
 
 * {
   box-sizing: border-box; }
@@ -223,7 +233,7 @@ Header Layout
         margin: 0;
         display: flex;
         flex-flow: column wrap;
-        border-radius: none; } }
+        border-radius: 0; } }
 
 .main__top {
   background-image: url("http://arcticwild.com/wp-content/uploads/2014/11/Canning-River-Raft_12.jpg");
