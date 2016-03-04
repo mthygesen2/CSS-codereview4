@@ -69,14 +69,6 @@ table {
   .main > * button:hover {
     transform: scale(1.5); }
 
-@media screen and (min-width: 768px) {
-  .main__top, .main__bottom {
-    width: 50%; } }
-
-@media screen and (min-width: 768px) {
-  .main__half--1, .main__half--2, .main__half--3, .main__half--4 {
-    width: 25%; } }
-
 .submit {
   border: 1px solid #dc7725;
   height: 50px;
@@ -105,7 +97,9 @@ body {
   line-height: 1.5;
   color: white;
   margin: 0;
-  background-color: #d1d1c9; }
+  background-color: #d1d1c9;
+  max-width: 1680px;
+  margin: auto; }
 
 a {
   text-decoration: none;
@@ -198,7 +192,7 @@ Header Layout
     margin-bottom: 50px; }
 
 .main {
-  height: 100%;
+  max-width: 1680px;
   width: 100%;
   display: flex;
   height: 100%;
@@ -245,36 +239,45 @@ Header Layout
         display: flex;
         flex-flow: column wrap;
         border-radius: 0; } }
+  @media screen and (min-width: 1200px) {
+    .main__half--1 {
+      width: 25% !important; }
+    .main__half--2 {
+      width: 25% !important; }
+    .main__half--3 {
+      width: 25% !important; }
+    .main__half--4 {
+      width: 25% !important; } }
 
 .main__top {
   background-image: url("http://arcticwild.com/wp-content/uploads/2014/11/Canning-River-Raft_12.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 .main__half--1 {
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-basecamp.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 .main__half--2 {
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-backpacking.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 .main__half--3 {
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-canoe.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 .main__half--4 {
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 .main__bottom {
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/trips/home-custom.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%; }
+  background-size: auto auto; }
 
 /*# sourceMappingURL=main.css.map */

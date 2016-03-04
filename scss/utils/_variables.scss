@@ -51,12 +51,29 @@ $brand-color: #dc7725;
 
 %media-medium-big {
   @media screen and (min-width: 768px) {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 0;
+  }
+  @media screen and (min-width: 1200px) {
     width:50%;
+    margin: 0;
+    display: flex;
   }
 }
 
 %media-medium-small {
-  @media screen and (min-width: 768px) {
-    width: 25%;
+  @media screen and (min-width: 1200px){
+    .main {
+      @include e("top") {
+      width: 25%;
+      margin: 0;
+      display: flex;
+      flex-flow: column wrap;
+      border-radius: 0;
+      }
+    }
   }
 }
