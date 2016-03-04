@@ -191,6 +191,26 @@ Header Layout
     height: 4px;
     margin-bottom: 50px; }
 
+.header__nav--bottom {
+  display: none; }
+@media screen and (min-width: 768px) {
+  .header__nav--bottom {
+    width: 100%;
+    display: flex !important;
+    flex-flow: row nowrap;
+    justify-content: flex-start; }
+    .header__nav--bottom ul {
+      width: 100%;
+      display: flex !important;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      background-color: #aaa;
+      padding-left: 50px; }
+      .header__nav--bottom ul li {
+        padding: 1em; }
+        .header__nav--bottom ul li:hover {
+          background-color: #995c00; } }
+
 .main {
   max-width: 1680px;
   width: 100%;

@@ -87,3 +87,35 @@ Header Layout
     }
   }
 }
+/////bottom nav/////////
+.header {
+  @include e("nav") {
+    @include m("bottom") {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    @include e("nav") {
+      @include m("bottom") {
+          width: 100%;
+          display: flex !important;
+          flex-flow: row nowrap;
+          justify-content: flex-start;
+          ul {
+            width: 100%;
+            display: flex !important;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            background-color: #aaa;
+            padding-left:50px;
+            li{
+              padding: 1em;
+              &:hover {
+                background-color: #995c00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
