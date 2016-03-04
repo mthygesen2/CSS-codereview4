@@ -1,10 +1,34 @@
 /* --------------------------
 Header Layout
 --------------------------- */
-.dropdown {
-  position: relative;
-  display: inline-block;
+
+//Header with background image and toggled navbar///////////
+.header{
+  @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg", auto, auto);
+  @include e("nav") {
+    @include flex-container($height: 100px, $flex-flow: row nowrap, $justify: space-between, $padding: 1em);
+    padding-top: 2em;
+
+    @include m("brand") {
+      @include flex-container();
+      font-family: $font-brand;
+      h2{
+        align-self: center;
+        font-size: 1.5em;
+        padding: 0 0.5em;
+      }
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      @include e("button") {
+        align-self: center;
+      }
+    }
+  }
 }
+
+///////Header DROPDOWN hover functions ////////////////////
 .header__nav--top {
   display: none;
   position: absolute;
@@ -28,22 +52,9 @@ Header Layout
 }
 
 
-.header{
-  // height: 500px;
-  @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg", auto, auto);
-  @include e("nav") {
-    @include flex-container($height: 100px, $flex-flow: row nowrap, $justify: space-between, $padding: 2em);
-    padding-top: 2em;
-
-    @include m("logo") {
-      // width: 110px;
-      // align-self: center;
-      font-family: $font-brand;
-    }
-    @include m("top") {
-      // align-self: flex-end;
-    }
-  }
+///header middle captions and hr ///////
+/////////////
+.header {
   @include e("caption") {
     margin: auto;
     h3{

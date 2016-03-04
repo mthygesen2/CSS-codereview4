@@ -96,9 +96,40 @@ a {
 /* --------------------------
 Header Layout
 --------------------------- */
-.dropdown {
-  position: relative;
-  display: inline-block; }
+.header {
+  background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto; }
+  .header__nav {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    padding: 1em;
+    margin: 0 auto;
+    padding-top: 2em; }
+    .header__nav--brand {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+      padding: 0;
+      margin: 0 auto;
+      font-family: "EB Garamond", serif; }
+      .header__nav--brand h2 {
+        align-self: center;
+        font-size: 1.5em;
+        padding: 0 0.5em; }
+    .header__nav .dropdown {
+      position: relative;
+      display: inline-block; }
+      .header__nav .dropdown__button {
+        align-self: center; }
 
 .header__nav--top {
   display: none;
@@ -119,40 +150,23 @@ Header Layout
 .header__nav--top a:hover {
   background-color: #995c00; }
 
-.header {
-  background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto auto; }
-  .header__nav {
-    width: 100%;
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row nowrap;
-    padding: 2em;
-    margin: 0 auto;
-    padding-top: 2em; }
-    .header__nav--logo {
-      font-family: "EB Garamond", serif; }
-  .header__caption {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    padding: 0;
-    margin: 0 auto; }
-    .header__caption h3 {
-      letter-spacing: 0.2em; }
-    .header__caption--hr {
-      width: 250px;
-      background-color: white;
-      height: 4px;
-      margin-bottom: 50px; }
+.header__caption {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0 auto; }
+  .header__caption h3 {
+    letter-spacing: 0.2em; }
+  .header__caption--hr {
+    width: 250px;
+    background-color: white;
+    height: 4px;
+    margin-bottom: 50px; }
 
 .main {
   height: 100%;
