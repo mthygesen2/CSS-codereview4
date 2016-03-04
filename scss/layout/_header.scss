@@ -1,0 +1,38 @@
+/* --------------------------
+Header Layout
+--------------------------- */
+
+.header{
+  height: 500px;
+  @include bg-img("http://www.alaska.org/photos/gallery3/var/albums/Best-of-Alaska-Articles/Must-See-in-Alaska/Northern-Lights/Northern-lights-in-Fairbanks1.jpg?m=1419023483");
+  @include e("nav") {
+    @include flex-container($height: 100px, $flex-flow: row nowrap, $justify: space-between);
+    padding-top: 2em;
+
+    @include m("logo") {
+      // width: 110px;
+      // align-self: center;
+      font-family: $font-brand;
+    }
+    @include m("top") {
+      // align-self: flex-end;
+    }
+  }
+  @include e("caption") {
+    margin: auto;
+    h3{
+      @extend %font-caption;
+    }
+    @include flex-container($height: 400px, $flex-flow: column nowrap, $justify: center, $align: center);
+    @include m("brand") {
+      @extend %font-brand;
+    }
+    @include m("hr") {
+      width: 300px;
+      border: none;
+      height: 8px;
+      background-color: $text-color;
+      margin-bottom: 50px;
+    }
+  }
+}

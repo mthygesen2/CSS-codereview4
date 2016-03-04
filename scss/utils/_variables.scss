@@ -1,0 +1,18 @@
+$text-color: white;
+
+$font-caption: 'Oswald', sans-serif;
+$font-brand: 'EB Garamond', serif;
+$font-main: "Helvetica Neue", sans-serif;
+
+
+
+
+%font-brand {
+  font-size: 5em;
+  font-family: $font-brand;
+}
+
+%font-caption {
+  font-size: 1.3em;
+  font-family: $font-caption;
+}

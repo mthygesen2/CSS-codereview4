@@ -1,0 +1,35 @@
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+@mixin flex-container($width: 100%, $height: 100%, $justify: flex-start, $align: flex-start, $flex-flow: row nowrap,$padding: 0) {
+  width: $width;
+  display: flex;
+  height: $height;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flex-flow;
+  padding: $padding;
+  margin: 0 auto;
+}
+
+@mixin bg-img($url, $width : 100%, $height: 100%) {
+background-image: url($url);
+background-repeat: no-repeat;
+background-position: center;
+background-size: $width $height;
+}
+
+@mixin col-width($width, $margin-left: 0em, $margin-right: 0em) {
+    $margin : $margin-left + $margin-right;
+    width: calc(#{$width} - #{$margin});
+    margin: 0 $margin-right 0 $margin-left;
+}
