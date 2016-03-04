@@ -4,8 +4,7 @@ $font-caption: 'Oswald', sans-serif;
 $font-brand: 'EB Garamond', serif;
 $font-main: "Helvetica Neue", sans-serif;
 
-
-
+$main-height-mobile: 250px;
 
 %font-brand {
   font-size: 5em;
@@ -15,4 +14,20 @@ $font-main: "Helvetica Neue", sans-serif;
 %font-caption {
   font-size: 1.3em;
   font-family: $font-caption;
+}
+
+%main-full {
+  height: 500px;
+  width: 100%;
+}
+
+%main-half {
+  height: 500px;
+  width: 50%;
+}
+
+%main-mobile {
+  height: 250px;
+  width: 90%;
+  margin: 1em auto;
 }
