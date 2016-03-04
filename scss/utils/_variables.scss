@@ -7,7 +7,7 @@ $font-main: "Helvetica Neue", sans-serif;
 $main-height-mobile: 250px;
 
 %font-brand {
-  font-size: 5em;
+  font-size: 4em;
   font-family: $font-brand;
 }
 
@@ -30,4 +30,25 @@ $main-height-mobile: 250px;
   height: 250px;
   width: 90%;
   margin: 1em auto;
+}
+
+%main-button {
+  button {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  transition: all .5s;
+  align-self: center;
+  margin: 0 auto;
+    i {
+      font-size: 4em;
+      margin: auto;
+      color: rgba(255,255,255, 0.8)
+    }
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
 }

@@ -6,11 +6,20 @@
     @extend %font-caption;
     @include flex-container(90%, 250px, $flex-flow: column nowrap, $align: flex-end, $justify: flex-end);
     margin: 1em auto;
+    border-radius: 4px;
     h3 {
       align-self: baseline;
-      margin: 1em;
+      margin: 0 0 1.5em 1.5em;
+    }
+    & .main__hr {
+      background: #dc7725;
+      height: 5px;
+      width: 40px;
+      margin: 0 0 0.5em 1.5em;
+      align-self: baseline;
     }
   }
+
   @include e("top") {
     @include bg-img("http://arcticwild.com/wp-content/uploads/2014/11/Canning-River-Raft_12.jpg");
   }

@@ -8,3 +8,7 @@
   font-weight: bold;
   position: relative;
 }
+
+.main > * {
+  @extend %main-button;
+}
