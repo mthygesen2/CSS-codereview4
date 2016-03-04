@@ -50,7 +50,7 @@ table {
   font-family: "EB Garamond", serif; }
 
 .header__caption h3, .main > * {
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Oswald", sans-serif; }
 
 .main > * button {
@@ -122,11 +122,12 @@ Header Layout
     flex-flow: column nowrap;
     padding: 0;
     margin: 0 auto; }
+    .header__caption h3 {
+      letter-spacing: 0.2em; }
     .header__caption--hr {
-      width: 300px;
-      border: none;
-      height: 8px;
+      width: 250px;
       background-color: white;
+      height: 4px;
       margin-bottom: 50px; }
 
 .main {

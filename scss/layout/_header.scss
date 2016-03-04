@@ -22,16 +22,16 @@ Header Layout
     margin: auto;
     h3{
       @extend %font-caption;
+      letter-spacing: 0.2em;
     }
     @include flex-container($height: 400px, $flex-flow: column nowrap, $justify: center, $align: center);
     @include m("brand") {
       @extend %font-brand;
     }
     @include m("hr") {
-      width: 300px;
-      border: none;
-      height: 8px;
-      background-color: $text-color;
+      width: 250px;
+      background-color: white;
+      height: 4px;
       margin-bottom: 50px;
     }
   }
