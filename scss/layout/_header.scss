@@ -101,18 +101,21 @@ Header Layout
   @media screen and (min-width: 768px) {
     @include e("nav") {
       @include m("bottom") {
+        width: 100%;
+        display: flex !important;
+        margin-top:250px;
+        ul {
           width: 100%;
           display: flex !important;
-          margin-top:250px;
-          ul {
-            width: 100%;
-            display: flex !important;
-            background-color: #aaa;
-            padding-left:50px;
-            li{
-              padding: 1em;
-              &:hover {
-                background-color: #995c00;
+          background-color: #aaa;
+          padding-left:50px;
+          li{
+            padding: 1em;
+            &:hover {
+              background-color: #995c00;
+            }
+            &:last-child {
+              border-left: 1px solid #bbb;
             }
           }
         }

@@ -217,7 +217,9 @@ Header Layout
       .header__nav--bottom ul li {
         padding: 1em; }
         .header__nav--bottom ul li:hover {
-          background-color: #995c00; } }
+          background-color: #995c00; }
+        .header__nav--bottom ul li:last-child {
+          border-left: 1px solid #bbb; } }
 
 .main {
   max-width: 1680px;
