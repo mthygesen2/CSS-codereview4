@@ -78,7 +78,7 @@ table {
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  margin: auto auto 100px auto; }
+  margin: auto auto auto auto; }
   .submit .caret {
     position: absolute;
     width: 0;
@@ -86,7 +86,7 @@ table {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 15px solid #dc7725;
-    top: 45px;
+    top: 40px;
     right: 50px; }
 
 * {
@@ -109,10 +109,21 @@ a {
 Header Layout
 --------------------------- */
 .header {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0 auto;
   background-image: url("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto auto; }
+  @media screen and (min-width: 768px) {
+    .header {
+      height: 800px; } }
   .header__nav {
     width: 100%;
     display: flex;
@@ -178,10 +189,10 @@ Header Layout
   width: 100%;
   display: flex;
   height: 400px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column nowrap;
-  padding: 0;
+  padding: 50px;
   margin: 0 auto; }
   .header__caption h3 {
     letter-spacing: 0.2em; }
@@ -197,13 +208,10 @@ Header Layout
   .header__nav--bottom {
     width: 100%;
     display: flex !important;
-    flex-flow: row nowrap;
-    justify-content: flex-start; }
+    margin-top: 250px; }
     .header__nav--bottom ul {
       width: 100%;
       display: flex !important;
-      flex-flow: row nowrap;
-      justify-content: flex-start;
       background-color: #aaa;
       padding-left: 50px; }
       .header__nav--bottom ul li {

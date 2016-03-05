@@ -7,7 +7,7 @@
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  margin: auto auto 100px auto;
+  margin: auto auto auto auto;
   .caret {
     position: absolute;
     width: 0;
@@ -15,7 +15,7 @@
   	border-left: 20px solid transparent;
   	border-right: 20px solid transparent;
   	border-top: 15px solid $brand-color;
-    top: 45px;
+    top: 40px;
     right: 50px;
   }
 }
