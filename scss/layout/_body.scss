@@ -51,7 +51,7 @@
 //Main Section Backgrounds//// /////////////////////////
 .main {
   @include e("top") {
-    @include bg-img("../img/tuk.jpeg", auto, auto);
+    @include bg-img("../img/tuk2.jpeg", auto, auto);
 
   }
   @include e("half") {
@@ -73,7 +73,7 @@
     }
   }
   @include e("bottom") {
-    @include bg-img("../img/city.jpg", auto, auto);
+    @include bg-img("../img/city2.jpg", auto, auto);
 
   }
 }

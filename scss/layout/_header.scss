@@ -107,7 +107,7 @@ Header Layout
         ul {
           width: 100%;
           display: flex !important;
-          background-color: #aaa;
+          background-color: #EDD1D1;
           padding-left:50px;
           li{
             padding: 1em;
@@ -116,6 +116,9 @@ Header Layout
             }
             &:last-child {
               border-left: 1px solid #bbb;
+            }
+            a {
+              color: black;
             }
           }
         }

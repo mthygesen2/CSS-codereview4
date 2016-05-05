@@ -212,14 +212,16 @@ Header Layout
     .header__nav--bottom ul {
       width: 100%;
       display: flex !important;
-      background-color: #aaa;
+      background-color: #EDD1D1;
       padding-left: 50px; }
       .header__nav--bottom ul li {
         padding: 1em; }
         .header__nav--bottom ul li:hover {
           background-color: #995c00; }
         .header__nav--bottom ul li:last-child {
-          border-left: 1px solid #bbb; } }
+          border-left: 1px solid #bbb; }
+        .header__nav--bottom ul li a {
+          color: black; } }
 
 .main {
   max-width: 1680px;
@@ -280,7 +282,7 @@ Header Layout
       width: 25% !important; } }
 
 .main__top {
-  background-image: url("../img/tuk.jpeg");
+  background-image: url("../img/tuk2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto auto; }
@@ -305,7 +307,7 @@ Header Layout
   background-position: center;
   background-size: auto auto; }
 .main__bottom {
-  background-image: url("../img/city.jpg");
+  background-image: url("../img/city2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto auto; }
