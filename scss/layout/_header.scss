@@ -6,7 +6,7 @@ Header Layout
 //Header with background image and toggled navbar///////////
 .header{
   @include flex-container($flex-flow: column nowrap, $align: center);
-  @include bg-img("http://arcticwild.com/wp-content/themes/arcticwild/assets/img/hero-slide1.jpg", auto, auto);
+  @include bg-img("../img/header.jpeg", auto, auto);
   @media screen and (min-width: 768px) {
     height: 800px;
   }
@@ -107,7 +107,7 @@ Header Layout
         ul {
           width: 100%;
           display: flex !important;
-          background-color: #aaa;
+          background-color: #EDD1D1;
           padding-left:50px;
           li{
             padding: 1em;
@@ -116,6 +116,9 @@ Header Layout
             }
             &:last-child {
               border-left: 1px solid #bbb;
+            }
+            a {
+              color: black;
             }
           }
         }
